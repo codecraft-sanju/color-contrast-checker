@@ -1,0 +1,58 @@
+:root {
+  --white: #fff;
+  --border-color: #d6d6d6;
+  --poor-contrast-bg: #fbd0da;
+  --poor-contrast-color: #5f071c;
+  --good-contrast-bg: #fbf5d0;
+  --good-contrast-color: #5f5207;
+  --very-good-contrast-bg: #d2fbd0;
+  --very-good-contrast-color: #0d5f07;
+  --subtitle-color: #7e7d84;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fcfdff;
+}
+
+button {
+  cursor: pointer;
+}
+
+.title,
+.subtitle {
+  text-align: center;
+}
+
+.title {
+  font-weight: 800;
+  font-size: 2.5rem;
+}
+
+.subtitle {
+  color: var(--subtitle-color);
+  font-weight: 400;
+  font-size: 1.25rem;
+  padding: 10px 0 100px;
+}
+
+.card {
+  background-color: var(--white);
+  border: 1px solid var(--border-color);
+  border-radius: 20px;
+  max-width: 1000px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
